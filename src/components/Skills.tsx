@@ -1,7 +1,6 @@
-import React from 'react';
-import {motion} from 'framer-motion';
-import {useInView} from 'react-intersection-observer';
-import {Code2, Database, Github as Git, Server} from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Code2, Database, Github as Git, Server } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
 
 const skillCategories = [
     {

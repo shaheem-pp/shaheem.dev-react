@@ -1,16 +1,24 @@
-import React, {useEffect} from 'react';
-import {AnimatePresence, motion} from 'framer-motion';
-import {ExternalLink, Github, X} from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ExternalLink, Github, X } from 'lucide-react';
+import React, { useEffect } from 'react';
 
 interface Project {
     title: string;
     description: string;
+    longDescription: string;
     tech: string[];
-    github?: string;
+    github: string | null;  // Allow null for github property
     image: string;
-    longDescription?: string;
-    features?: string[];
-    challenges?: string[];
+    features: string[];
+    challenges: string[];
+    // title: string;
+    // description: string;
+    // tech: string[];
+    // github?: string;
+    // image: string;
+    // longDescription?: string;
+    // features?: string[];
+    // challenges?: string[];
     liveSite?: string;
 }
 

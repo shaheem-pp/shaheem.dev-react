@@ -1,7 +1,6 @@
-import React from 'react';
-import {motion} from 'framer-motion';
-import {useInView} from 'react-intersection-observer';
-import {Code, Globe} from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Code, Globe } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
     const [ref, inView] = useInView({

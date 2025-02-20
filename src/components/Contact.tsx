@@ -1,9 +1,9 @@
-import React, {useRef, useState} from 'react';
-import {motion} from 'framer-motion';
-import {useInView} from 'react-intersection-observer';
-import {Github, Linkedin, Loader2, Mail} from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
+import { Github, Linkedin, Loader2, Mail } from 'lucide-react';
+import React, { useRef, useState } from 'react';
 import toast from 'react-hot-toast';
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
     const [ref, inView] = useInView({

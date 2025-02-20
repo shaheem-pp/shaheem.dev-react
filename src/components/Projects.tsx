@@ -1,8 +1,19 @@
-import React, {useState} from 'react';
-import {motion} from 'framer-motion';
-import {useInView} from 'react-intersection-observer';
-import {Github} from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Github } from 'lucide-react';
+import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import ProjectModal from './ProjectModal';
+
+type Project = {
+    title: string;
+    description: string;
+    longDescription: string;
+    tech: string[];
+    github: string | null;
+    image: string;
+    features: string[];
+    challenges: string[];
+};
 
 const projects = [
     {
@@ -118,7 +129,8 @@ const Projects = () => {
         threshold: 0.1,
     });
 
-    const [selectedProject, setSelectedProject] = useState(null);
+    // Update this line to use the Project type
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
         <section id="projects" className="section-container">
